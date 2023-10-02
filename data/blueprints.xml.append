@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_REGOLIATH_CM" layout="regoliath" img="regoliath">
+	<class>Regoliath Cruiser</class>
+	<name>Regoliath</name>
+	<desc>Reconstructed from an infamous mercenary ship, this ship takes advantage of its huge size to store many augments in a sealed-off cargo hold, as well as to support many systems and subsystems, more crew, and higher reactor levels.</desc>
+	<systemList>
+		<artillery power="1" room="21" start="true" weapon="ARTILLERY_FED" img="room_artillery_regoliath"/>
+		<battery power="1" room="26" start="true" img="room_battery_4"/>
+		<cloaking power="1" room="24" start="true" img="room_cloaking"/>
+		<clonebay power="1" room="0" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="5" start="true" img="room_doors_regoliath">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</doors>
+		<drones power="1" room="25" start="true" img="room_drones_4"/>
+		<engines power="1" room="11" start="true" img="room_engines_regoliath">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="22" start="true" img="room_hacking_8"/>
+		<medbay power="1" room="0" start="true" img="room_medbay_8">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="28" start="true" img="room_mind_4"/>
+		<oxygen power="1" room="23" start="true" img="room_oxygen_11"/>
+		<pilot power="1" room="12" start="true" img="room_pilot_4_regoliath">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="7" start="true" img="room_sensors_2_regoliath">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="1" room="8" start="true" img="room_shields_2_regoliath">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="27" start="true"/>
+		<weapons power="1" room="6" start="true" img="room_weapons_10">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="0"/>
+	<droneList drones="0" count="0"/>
+	<health amount="30"/>
+	<maxPower amount="0"/>
+	<crewCount amount="4" class="human"/>
+</shipBlueprint>
+
+<mod:findName type="systemBlueprint" name="shields">
+        <mod:findLike type="upgradeCost">
+            <mod-append:level>120</mod-append:level>
+            <mod-append:level>120</mod-append:level>
+        </mod:findLike>
+</mod:findName>
+<mod:findName type="systemBlueprint" name="weapons">
+        <mod:findLike type="upgradeCost">
+            <mod-append:level>120</mod-append:level>
+            <mod-append:level>120</mod-append:level>
+        </mod:findLike>
+</mod:findName>

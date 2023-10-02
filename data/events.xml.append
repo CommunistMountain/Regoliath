@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<event name="event_REGOLIATH_DECISION_CM" unique="true">
+	<text id="event_REGOLIATH_DECISION_CM_text"/>
+	<choice>
+		<text id="event_REGOLIATH_DECISION_CM_c1_choice"/>
+	</choice>
+	<choice>
+		<text id="event_REGOLIATH_DECISION_CM_c2_choice"/>
+		<event load="event_REGOLIATH_DECISION_RANDOM_CM"/>
+	</choice>
+	<choice>
+		<text id="event_REGOLIATH_DECISION_CM_c3_choice"/>
+		<event load="event_REGOLIATH_DECISION_CONFIRM_CM"/>
+	</choice>
+</event>
+
+<event name="event_REGOLIATH_DECISION_CONFIRM_CM"/>
+
+<event name="event_REGOLIATH_DECISION_RANDOM_CM"/>
+
+<event name="event_REGOLIATH_FIGHT_CM" unique="true">
+	<ship load="ship_REGOLIATH_FIGHT_CM" hostile="false"/>
+	<text id="event_REGOLIATH_FIGHT_CM_text"/>
+	<choice>
+		<text id="event_REGOLIATH_FIGHT_CM_c1_choice"/>
+		
+		<event load="event_REGOLIATH_UPGRADE_CM"/>
+	</choice>
+	<choice>
+		<text id="event_REGOLIATH_FIGHT_CM_c2_choice"/>
+		<ship hostile="true"/>
+	</choice>
+</event>
+
+<event name="event_REGOLIATH_UPGRADE_CM">
+	<text id="event_REGOLIATH_FIGHT_CM_c1_text"/>
+	<item_modify>
+		<item type="scrap" min="-600" max="-600"/>
+	</item_modify>
+	<choice>
+		<text id="continue"/>
+		<event>
+			<text id="event_REGOLIATH_FIGHT_CM_c1_c1_text"/>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+
+<event name="event_REGOLIATH_FIGHT_CM_DEADCREW" unique="true">
+	<text id="event_REGOLIATH_FIGHT_CM_DEADCREW_text"/>
+	<autoReward level="HIGH">standard</autoReward>
+	<unlockCustomShip silent="false">PLAYER_SHIP_REGOLIATH_CM</unlockCustomShip>
+</event>
+
+<event name="event_REGOLIATH_FIGHT_CM_SURRENDER" unique="true">
+	<text id="event_REGOLIATH_FIGHT_CM_SURRENDER_text"/>
+	<choice hidden="true">
+		<text id="event_REGOLIATH_FIGHT_CM_SURRENDER_c1_choice"/>
+		<event>
+			<text id="event_REGOLIATH_FIGHT_CM_SURRENDER_c1_c1_text"/>
+			<ship hostile="false"/>
+			<autoReward level="MED">standard</autoReward>
+			<unlockCustomShip silent="false">PLAYER_SHIP_REGOLIATH_CM</unlockCustomShip>
+		</event>
+	</choice>
+	<choice>
+		<text id="event_REGOLIATH_FIGHT_CM_SURRENDER_c2_choice"/>
+		<event/>
+	</choice>
+</event>
+
+<event name="event_REGOLIATH_FIGHT_CM_DESTROYED" unique="true">
+	<text id="event_REGOLIATH_FIGHT_CM_DESTROYED_text"/>
+	<autoReward level="HIGH">standard</autoReward>
+</event>

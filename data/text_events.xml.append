@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<text name="event_REGOLIATH_DECISION_CM_text">Word has it that the crew of the legendary mercenary ship, the Regoliath, have been hired by the Rebellion to stop you. You think to yourself...</text>
+<text name="event_REGOLIATH_DECISION_CM_c1_choice">Aren't they just a legend?</text>
+<text name="event_REGOLIATH_DECISION_CM_c2_choice">Whatever happens, happens.</text>
+<text name="event_REGOLIATH_DECISION_CM_c3_choice">Nothing will stop us from defeating the Rebels!</text>
+
+<text name="event_REGOLIATH_FIGHT_CM_text">A huge ship looms before you. It is the Regoliath, one of the most powerful mercenary ships in existence! You receive a voice-only transmission. "Greetings. Unfortunately for you, the Rebellion has promised us a great deal if we stop you here. But first, we have a proposition for you. For a fair price, we can upgrade your ship in ways not available anywhere else."</text>
+<text name="event_REGOLIATH_FIGHT_CM_c1_choice">Pay for the upgrade.</text>
+<text name="event_REGOLIATH_FIGHT_CM_c1_text">"Excellent. Both the current and maximum levels of your Weapon Control and Shields have been increased by 3."</text>
+<text name="event_REGOLIATH_FIGHT_CM_c1_c1_text">"Now that we have upheld our deal with you, we shall uphold our deal with the Rebellion. Put our upgrades to good use!"</text>
+<text name="event_REGOLIATH_FIGHT_CM_c2_choice">Fight.</text>
+
+<text name="event_REGOLIATH_FIGHT_CM_DEADCREW_text">With the mercenaries dead, your crew board the ship to retrieve scrap and resources. For some reason, you are unable to find any signs of the augmentations it should have. You send the ship back to Federation command in hopes of discovering its secrets.</text>
+
+<text name="event_REGOLIATH_FIGHT_CM_SURRENDER_text">"We admit defeat. If you let us live, we will give you all that we have. We will even give you this ship!"</text>
+<text name="event_REGOLIATH_FIGHT_CM_SURRENDER_c1_choice">Let them live.</text>
+<text name="event_REGOLIATH_FIGHT_CM_SURRENDER_c1_c1_text">The mercenaries hastily leave in a shuttle. Your crew board the ship to retrieve whatever scrap and resources they haven't taken as they left. For some reason, you are unable to find any signs of the augmentations it should have. You send the ship back to Federation command in hopes of discovering its secrets.</text>
+<text name="event_REGOLIATH_FIGHT_CM_SURRENDER_c2_choice">We will not accept surrender!</text>
+
+<text name="event_REGOLIATH_FIGHT_CM_DESTROYED_text">You retrieve all that you can from the debris. Because of its huge size, you gain a great deal of scrap and usable resources despite much of it being lost to space! However, you wonder if there were even greater gains to be had if the ship was captured intact.</text>

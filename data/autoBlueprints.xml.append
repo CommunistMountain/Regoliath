@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shipBlueprint name="ENEMY_SHIP_REGOLIATH_CM" layout="enemyRegoliath" img="enemyRegoliath">
+	<class>Enemy Regoliath Cruiser</class>
+	<minSector>7</minSector>
+	<maxSector>7</maxSector>
+	<systemList>
+		<artillery power="4" max="4" room="21" start="true" weapon="ARTILLERY_FED"/>
+		<battery power="2" max="2" room="26" start="true"/>
+		<cloaking power="3" max="3" room="24" start="true"/>
+		<doors power="3" max="3" room="5" start="true"/>
+		<drones power="8" max="8" room="25" start="true"/>
+		<engines power="8" max="8" room="11" start="true"/>
+		<hacking power="3" max="3" room="22" start="true"/>
+		<medbay power="3" max="3" room="0" start="true"/>
+		<mind power="3" max="3" room="28" start="true"/>
+		<oxygen power="3" max="3" room="23" start="true"/>
+		<pilot power="3" max="3" room="12" start="true"/>
+		<sensors power="3" max="3" room="7" start="true"/>
+		<shields power="8" max="8" room="8" start="true"/>
+		<teleporter power="3" max="3" room="27" start="true"/>
+		<weapons power="8" max="8" room="6" start="true"/>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="99" count="4">
+		<weapon name="MISSILE_CHARGEGUN"/>
+		<weapon name="LASER_BURST_3"/>
+		<weapon name="BEAM_HULL"/>
+		<weapon name="ION_CHARGEGUN"/>
+	</weaponList>
+	<droneList drones="99" count="3">
+		<drone name="COMBAT_1"/>
+		<drone name="COMBAT_BEAM_2"/>
+		<drone name="COMBAT_FIRE"/>
+	</droneList>
+	<health amount="30"/>
+	<maxPower amount="50"/>
+	<crewCount amount="4" max="4" class="human"/>
+	<crewCount amount="3" max="3" class="engi"/>
+	<crewCount amount="4" max="4" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<blueprintList name="ships_REGOLIATH_FIGHT_CM">
+	<name>ENEMY_SHIP_REGOLIATH_CM</name>
+</blueprintList>

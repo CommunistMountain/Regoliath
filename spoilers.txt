@@ -1,0 +1,18 @@
+Choices at the start of the game:
+	1. Normal gameplay.
+	2. Enables the encounter at Sector 7 Exit Beacon.
+	3. 50% chance of the encounter at Sector 7 Exit Beacon.
+
+Choices on encounter:
+	1: Pay 600 scrap for upgrading both the maximum and current level of Shields and Weapon Control by 3 (Levels 9-11 of both systems will be priced at 120 scrap, unless you have other mods that define their values). Then, fight.
+	2: Fight.
+
+After killing enemy crew:
+	High scrap and resources, and unlock the ship.
+
+Choices after surrender:
+	1. Medium scrap and resources, and unlock the ship.
+	2. Continue the fight.
+
+After ship is destroyed:
+	High scrap and resources.

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ship name="ship_REGOLIATH_FIGHT_CM" auto_blueprint="ships_REGOLIATH_FIGHT_CM">
+	<deadCrew load="event_REGOLIATH_FIGHT_CM_DEADCREW"/>
+	<surrender min="-3" max="-3" load="event_REGOLIATH_FIGHT_CM_SURRENDER"/>
+	<destroyed load="event_REGOLIATH_FIGHT_CM_DESTROYED"/>
+</ship>

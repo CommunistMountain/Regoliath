@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ships>
+	<ship name="PLAYER_SHIP_REGOLIATH_CM" a="true" b="false" c="false"/>
+	<customShip name="PLAYER_SHIP_REGOLIATH_CM">
+		<hiddenAug>NANO_MEDBAY</hiddenAug>
+		<hiddenAug>ENERGY_SHIELD</hiddenAug>
+		<hiddenAug>CREW_STIMS</hiddenAug>
+		<hiddenAug>SLUG_GEL</hiddenAug>
+		<hiddenAug>ROCK_ARMOR</hiddenAug>
+		<hiddenAug>SYSTEM_CASING</hiddenAug>
+		<hiddenAug>CRYSTAL_SHARDS</hiddenAug>
+		<hiddenAug>O2_MASKS</hiddenAug>
+		<crewLimit>11</crewLimit>
+	</customShip>
+</ships>
+
+<bossShip>ENEMY_SHIP_REGOLIATH_CM</bossShip>
+
+<mod:findLike type="scripts">
+	<mod-append:script>data/scripts/regoliath.lua</mod-append:script>
+</mod:findLike>
